@@ -16,13 +16,10 @@ def xo(mystr):
     else:
         return False
 
-def bestsolution():
-
+def bestsolution(mystring):
+    s = s.lower()
+    return s.count('x') == s.count('o')
 
 mystring = 'XXxxooooosssudosioioxx13FoOOxxxxx'
 
-
 print(bool(xo(mystring)))
-def xo(s):
-    s = s.lower()
-    return s.count('x') == s.count('o')
